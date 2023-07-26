@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 13%;
+}
+
+.container .box1 {
+
+    display: flex;
+    flex-direction: column;
+    border: .2rem solid #16a085;
+    align-items: center;
+    padding: 3rem;
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+
+
+}
+
+.container .box1 i {
+    font-size: 100px;
+    color: #16a085;
+}
+
+.container .box1 button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border: .2rem solid #16a085;
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    color: #16a085;
+    cursor: pointer;
+    font-size: 1.7rem;
+    background: #fff;
+}
+
+.container .box1 button:hover {
+    color: #fff;
+    background: #16a085;
+}
+
+
+.container .box2 {
+    display: flex;
+    flex-direction: column;
+    border: .2rem solid #16a085;
+    align-items: center;
+    padding: 3rem;
+    margin-left: 3rem;
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+}
+
+.container .box2 i {
+    font-size: 100px;
+    color: #16a085;
+}
+
+.container .box2 button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border: .2rem solid #16a085;
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    color: #16a085;
+    cursor: pointer;
+    font-size: 1.7rem;
+    background: #fff;
+}
+
+.container .box2 button:hover {
+    color: #fff;
+    background: #16a085;
+}
