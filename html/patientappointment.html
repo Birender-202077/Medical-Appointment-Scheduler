@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Appointment Form</title>
+    <link rel="stylesheet" href="../css/patientappointment.css" />
+</head>
+
+<body>
+    <div class="s-e-f">Patient Appointment Form</div>
+    <div class="main">
+        <div class="form-container">
+            <form class="patient-form" id="form" name="myForm" onsubmit="return validateForm()" method="get" action="/">
+                <div class="form-design" id="full-name">
+                    <div class="form-feilds">Name</div>
+                    <input type="text" name="fname" id="full-name" placeholder="Enter your full name" required />
+                    <div class="error-container" id="error-container"></div>
+                </div>
+                <div class="form-design" id="email">
+                    <div class="form-feilds">Email</div>
+                    <input type="email" name="femail" id="email" placeholder="Enter your email" required />
+                    <div class="error-container" id="error-container"></div>
+                </div>
+                <div class="form-design" id="address">
+                    <div class="form-feilds">Address</div>
+                    <input type="address" name="faddress" id="add" placeholder="Enter your full address" required />
+                    <div class="error-container" id="error-container"></div>
+                </div>
+                <div class="form-design" id="phone">
+                    <div class="form-feilds">Phone</div>
+                    <input type="number" name="fphone" id="phone" placeholder="Enter your phone number" required />
+                    <div class="error-container" id="error-container"></div>
+                </div>
+                <div class="form-design" id="illness">
+                    <div class="form-feilds">Symptoms of Illness</div>
+                    <input type="text" name="fillness" id="illness" placeholder="Enter your illness symptoms" />
+                    <div class="error-container" id="error-container"></div>
+                </div>
+                <div class="form-design" id="date">
+                    <div class="form-feilds">Last Visit</div>
+                    <input type="date" name="date" id="date" />
+                    <div class="error-container" id="error-container"></div>
+                </div>
+                <div class="form-design" id="image">
+                    <div class="form-feilds">Last Visit Prescriptions</div>
+                    <input type="url" name="fimage" id="image" placeholder="Enter link to your last appointment pdf" />
+                    <div class="error-container" id="error-container"></div>
+                </div>
+                <div class="form-design" id="gender">
+                    <div class="form-feilds">Gender</div>
+                    <input type="radio" name="gender" id="male" value="Male" />
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="Female" />
+                    <label for="female">Female</label>
+
+                    <div class="error-container" id="error-container"></div>
+
+                </div>
+
+                <div class="form-design" id="doctor">
+                    <div class="form-feilds">Consulted Doctor</div>
+                    <input type="checkbox" name="doctor" id="doc1" value="Dr. Birender Singh" />
+                    <label for="doc1">Dr. Birender</label>
+                    <input type="checkbox" name="doctor" id="doc2" value="Dr. Avantika Singh" />
+                    <label for="doc2">Dr. Avantika</label>
+                    <input type="checkbox" name="doctor" id="doc3" value="Dr. Vikram Goenka" />
+                    <label for="doc3">Dr. Arnav </label>
+                    <div class="error-container" id="error-container"></div>
+                </div>
+
+                <div class="form-design" id="password">
+                    <div class="form-feilds">Password</div>
+                    <input type="password" name="fpassword" id="password" placeholder="Enter password" required />
+                    <div class="error-container" id="error-container"></div>
+                </div>
+                <div class="form-design" id="con-password">
+                    <div class="form-feilds">Confirm Password</div>
+                    <input type="password" name="fconpassword" id="con-password" placeholder="Enter password again"
+                        required />
+                    <div class="error-container" id="error-container"></div>
+                </div>
+                <input class="button submit-data" type="submit" value="Submit Data" />
+                <button class="button clear" type="button" onclick="clearFormFields()">
+                    Clear
+                </button>
+            </form>
+        </div>
+        <div class="card-container" id="card-container">
+            <p class="e-s">Preview Details</p>
+            <div id="displayData"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/patientappointment.js"></script>
+</body>
+
+</html>

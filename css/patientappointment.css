@@ -1,0 +1,156 @@
+.s-e-f {
+    width: 99%;
+    margin: 5px;
+    font-size: 28px;
+    background-color: #16a085;
+    text-align: center;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-design {
+    margin: 15px;
+    font-size: 20px;
+}
+
+.form-design input {
+    width: 50%;
+    padding: 5px;
+}
+
+#male,
+#female {
+    width: 2rem;
+}
+
+#doc1,
+#doc2,
+#doc3 {
+    width: 2rem;
+}
+
+.submit-data {
+    display: inline-block;
+    margin-top: .5rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border: .2rem solid #16a085;
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    color: #16a085;
+    cursor: pointer;
+    font-size: 1.4rem;
+    background: #fff;
+}
+
+.submit-data:hover {
+    color: #fff;
+    background-color: #16a085;
+}
+
+.form-feilds {
+    font-size: 20px;
+    width: 28%;
+    margin-bottom: 5px;
+}
+
+.clear {
+    display: inline-block;
+    margin-top: .5rem;
+    margin-left: 2rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: .2rem solid red;
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    color: red;
+    cursor: pointer;
+    font-size: 1.4rem;
+    background: #fff;
+}
+
+.clear:hover {
+    color: #fff;
+    background-color: red;
+}
+
+.card-container {
+    margin-top: 20px;
+    width: 50%;
+    max-height: 600px;
+    overflow-y: auto;
+    /* Add scrollbar when content exceeds max-height */
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    align-items: flex-start;
+}
+
+.e-s {
+    font-size: 36px;
+    width: 50%;
+    margin-left: 15px;
+}
+
+.doctor-container {
+    background-color: #f5f5f5;
+    border: 2px solid #16a085;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.doctor-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.form-container {
+    flex: 1;
+    padding-left: 40px;
+    padding-top: 30px;
+    border-right: 3.5px solid #16a085;
+}
+
+.form-container form {
+    width: 100%;
+}
+
+.patient-info {
+    flex: 1;
+    /* Allow the info div to take the remaining space */
+}
+
+.patient-info p {
+    margin: 5px 0;
+}
+
+
+.output-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}
+
+.error-container {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.error-container p {
+    margin: 5px 0;
+}
