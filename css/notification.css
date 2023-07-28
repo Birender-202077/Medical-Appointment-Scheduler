@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-Serif';
+}
+
+.notif_box {
+    padding: 35px 20px;
+    font-style: oblique;
+}
+
+.notif_box span {
+    color: red;
+    font-weight: 500;
+}
+
+.cards_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.manage_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.manage_card a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.notif_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 100%;
+    padding: 35px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icon_container {
+    margin-right: 5px;
+}
+
+.time {
+    text-align: right;
+}
+
+.unread {
+    font-weight: bold;
+}
+
+.read {
+    font-weight: 400;
+}
+
+i {
+    color: red;
+}
+
+.premium_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: #fff;
+    line-height: 1.5;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.premium_card a {
+    color: chartreuse;
+}
+
+@media (max-width:768px) {
+    .manage_card {
+        display: none;
+    }
+
+    .premium_card {
+        display: none;
+    }
+}
