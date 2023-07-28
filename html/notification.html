@@ -13,7 +13,8 @@
     <div class="container">
         <header>
             <div class="notif_box">
-                <h1 class="title">Notifications<span> (3)</span></h1>
+                <h1 class="title">Notifications<span id="activeMsg"> (5)</span></h1>
+                <button type="button" class="mark_all" id="markButton">Mark All As Read</button>
             </div>
         </header>
         <main>
@@ -23,77 +24,77 @@
                     <a href="#">View Settings</a>
                 </div>
                 <div class="notifications">
-                    <div class="notif_card unread">
+                    <div class="notif_card unread pending">
                         <div class="icon_container"><i class="fa fa-clock-o"></i></div>
-                        <div class="content">
+                        <div class="content ">
                             <p class="message">Your Appointment is pending.</p>
                             <p class="time">1min ago</p>
                         </div>
                     </div>
-                    <div class="notif_card unread">
+                    <div class="notif_card unread cancel">
                         <div class="icon_container"><i class="fa fa-ban"></i></div>
                         <div class="content">
                             <p class="message">Your Appointment is cancelled.</p>
                             <p class="time">5min ago</p>
                         </div>
                     </div>
-                    <div class="notif_card unread">
+                    <div class="notif_card unread update">
                         <div class="icon_container"><i class="fa fa-medkit"></i></div>
                         <div class="content">
                             <p class="message">Your Appointment update.</p>
                             <p class="time">1hr ago</p>
                         </div>
                     </div>
-                    <div class="notif_card read">
+                    <div class="notif_card read pending">
                         <div class="icon_container"><i class="fa fa-clock-o"></i></div>
                         <div class="content">
                             <p class="message">Your Appointment is pending.</p>
                             <p class="time">2hr ago</p>
                         </div>
                     </div>
-                    <div class="notif_card read">
+                    <div class="notif_card read cancel">
                         <div class="icon_container"><i class="fa fa-ban"></i></div>
                         <div class="content">
                             <p class="message">Your Appointment is cancelled.</p>
                             <p class="time">2hr5min ago</p>
                         </div>
                     </div>
-                    <div class="notif_card unread">
+                    <div class="notif_card unread pending">
                         <div class="icon_container"><i class="fa fa-clock-o"></i></div>
                         <div class="content">
                             <p class="message">Your Appointment is pending.</p>
                             <p class="time">2hrs15min ago</p>
                         </div>
                     </div>
-                    <div class="notif_card read">
+                    <div class="notif_card read update">
                         <div class="icon_container"><i class="fa fa-medkit"></i></div>
                         <div class="content">
                             <p class="message">Your Appointment update.</p>
                             <p class="time">2hr18min ago</p>
                         </div>
                     </div>
-                    <div class="notif_card read">
+                    <div class="notif_card read pending">
                         <div class="icon_container"><i class="fa fa-clock-o"></i></div>
                         <div class="content">
                             <p class="message">Your Appointment is pending.</p>
                             <p class="time">2hr ago</p>
                         </div>
                     </div>
-                    <div class="notif_card read">
+                    <div class="notif_card read cancel">
                         <div class="icon_container"><i class="fa fa-ban"></i></div>
                         <div class="content">
                             <p class="message">Your Appointment is cancelled.</p>
                             <p class="time">2hr5min ago</p>
                         </div>
                     </div>
-                    <div class="notif_card unread">
+                    <div class="notif_card  read pending">
                         <div class="icon_container"><i class="fa fa-clock-o"></i></div>
                         <div class="content">
                             <p class="message">Your Appointment is pending.</p>
                             <p class="time">2hrs15min ago</p>
                         </div>
                     </div>
-                    <div class="notif_card read">
+                    <div class="notif_card read update">
                         <div class="icon_container"><i class="fa fa-medkit"></i></div>
                         <div class="content">
                             <p class="message">Your Appointment update.</p>
@@ -109,6 +110,7 @@
             </div>
         </main>
     </div>
+    <script src="../js/notification.js"></script>
 </body>
 
 </html>
